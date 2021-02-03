@@ -41,8 +41,7 @@ public class Server implements Runnable{
 			
 			InputStreamReader streamReader = new InputStreamReader(sock.getInputStream());
 			BufferedReader reader = new BufferedReader (streamReader);
-			request = reader.readLine();
-			System.out.println("SERVER: " + request);		
+			request = reader.readLine();	
 			reader.close();
 			
 			sock = serverSock.accept();

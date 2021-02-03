@@ -12,6 +12,13 @@ public class Sentence implements TextContent, java.io.Serializable{
 		this.sentenceContent = new ArrayList<StringContent>();
 	}
 
+	public void setSentenceContent(List<StringContent> sentenceContent) {
+		this.sentenceContent = sentenceContent;
+	}
+	public List<StringContent> getSentenceContent(){
+		return this.sentenceContent;
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;

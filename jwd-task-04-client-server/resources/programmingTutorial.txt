@@ -1,0 +1,22 @@
+	В именах переменных не могут использоваться символы арифметических и логических операторов, а таже символ '#'.
+	Применение символов '$' и '_' допустимо, в том числе и в первой позиции.
+
+	1.2.6 ОБЪЯВЛЕНИЕ ПЕРЕМЕННЫХ
+
+public class VariableWxample{
+	boolean statusOn;
+	double javaVar = 2.34;
+	
+	public static void main(String[] args){
+		int itemSold = 04;
+		double salary = 1.234e3;
+		float iteamCost = 11.0f;
+		int i = 0xFd45, k$;
+		double _interestRate;
+	}
+	public void javaMethod(){
+		long simpleVar = 1_000_000_000_000L;
+		byte byteVar2 = 123;
+	}
+}
+	1.2.7 ОСОБЕННОСТИ РАБОТЫ С ПЕРЕМЕННЫМИ

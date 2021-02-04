@@ -12,6 +12,7 @@ import by.jwd.clientserver.entity.StringContent;
 
 public class Task01PerformingImpl implements TaskPerforming{
 
+	private List<String> parametrs = null;
 	
 	@Override
 	public List<String> doTask(List<Sentence> sentence) {
@@ -51,4 +52,9 @@ public class Task01PerformingImpl implements TaskPerforming{
 		return answer;
 	}
 
+	@Override
+	public void setParametrs(List<String> parametrs) {
+		this.parametrs = parametrs;
+		
+	}
 }

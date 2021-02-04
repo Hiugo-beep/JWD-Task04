@@ -114,6 +114,7 @@ public class TaskDAOImpl implements TaskDAO{
 		
 		if(isValidTaskPerforming) {
 			parametrs.remove(0);
+			taskPerforming.setParametrs(parametrs);
 			answer = taskPerforming.doTask(sentence);
 		}
 		

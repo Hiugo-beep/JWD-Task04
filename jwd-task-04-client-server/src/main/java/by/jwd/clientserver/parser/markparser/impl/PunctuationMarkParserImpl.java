@@ -16,26 +16,26 @@ public class PunctuationMarkParserImpl implements PunctuationMarkParser{
 		punctuationMark = new ArrayList<String>();
 		punctuationMark.add(",");
 		punctuationMark.add(":");
-		punctuationMark.add(";");
 		punctuationMark.add("\\*");
-		punctuationMark.add("!");
-		punctuationMark.add("\\?");
 		punctuationMark.add("\s-\s");
 		punctuationMark.add("\"");
 		punctuationMark.add("'");
+		punctuationMark.add(";");
+		punctuationMark.add("!");
+		punctuationMark.add("\\?");
 		punctuationMark.add("\\.");
 		
 		
 		mark = new ArrayList<String>();
 		mark.add(",");
 		mark.add(":");
-		mark.add(";");
 		mark.add("*");
-		mark.add("!");
-		mark.add("?");
 		mark.add("-");
 		mark.add("\"");
 		mark.add("'");
+		mark.add(";");
+		mark.add("!");
+		mark.add("?");
 		mark.add(".");
 		
 	}

@@ -6,7 +6,7 @@ import java.util.List;
 public class CodeBlock implements TextContent, java.io.Serializable{
 
 	private List<StringContent> codeLine = null;
-	public static long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 	
 	public CodeBlock() {
 		codeLine = new ArrayList<StringContent> ();

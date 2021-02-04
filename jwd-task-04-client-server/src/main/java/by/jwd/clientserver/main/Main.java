@@ -18,5 +18,19 @@ public class Main {
 		client.transferServer();
 
 		PrintTextInfo.print(client);
+		//////////////////////////////////////////////////////
+		
+		request = "2)";
+		client.setRequest(request);
+		client.transferServer();
+
+		PrintTextInfo.print(client);
+		//////////////////////////////////////////////////////
+				
+		request = "3)";
+		client.setRequest(request);
+		client.transferServer();
+		
+		PrintTextInfo.print(client);
 	}
 }

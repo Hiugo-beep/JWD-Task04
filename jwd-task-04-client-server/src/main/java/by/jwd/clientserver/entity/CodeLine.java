@@ -3,7 +3,7 @@ package by.jwd.clientserver.entity;
 public class CodeLine implements StringContent, java.io.Serializable{
 	
 	private String codeLine = "";
-	public static long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 	
 	public CodeLine() {}
 	public CodeLine(String codeLine) {

@@ -10,6 +10,7 @@ import by.jwd.clientserver.entity.Word;
 
 public class Task02PerformingImpl implements TaskPerforming{
 
+	private List<String> parametrs = null;
 	
 	private int countWords(Sentence sent) {
 		
@@ -51,5 +52,9 @@ public class Task02PerformingImpl implements TaskPerforming{
 		return answer;
 	}
 
-
+	@Override
+	public void setParametrs(List<String> parametrs) {
+		this.parametrs = parametrs;
+		
+	}
 }

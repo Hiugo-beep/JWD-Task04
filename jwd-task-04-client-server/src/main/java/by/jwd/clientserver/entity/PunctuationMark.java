@@ -3,7 +3,7 @@ package by.jwd.clientserver.entity;
 public class PunctuationMark implements StringContent, java.io.Serializable{
 
 	private char punctuationMark;
-	public static long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 	
 	public PunctuationMark() {}
 	public PunctuationMark(String punctuationMark) {

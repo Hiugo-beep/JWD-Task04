@@ -2,7 +2,7 @@ package by.jwd.clientserver.entity;
 
 public class Word implements StringContent, java.io.Serializable{
 
-	public static long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 	private String wordContent = "";
 	
 	public Word() {}

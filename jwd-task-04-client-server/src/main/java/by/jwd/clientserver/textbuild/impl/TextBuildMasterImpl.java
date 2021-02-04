@@ -21,7 +21,7 @@ public class TextBuildMasterImpl implements TextBuildMaster {
 	public Text createText(String[] file)  {
 
 		
-		TextBuild build = TextBuildImpl.getInstance();
+		TextBuild build = new TextBuildImpl();
 		boolean isValid = false;
 		List<String> sentences = new ArrayList<String>();
 		for(String str:file) {

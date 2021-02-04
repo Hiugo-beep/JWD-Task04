@@ -26,7 +26,6 @@ public class Task04PerformingImpl implements TaskPerforming{
 			int index = sent.getSentenceContent().size()-1;
 			boolean isInterrogativeSentence = sent.getSentenceContent().get(index).equals(new PunctuationMark("?"));
 			if(isInterrogativeSentence) {
-				System.out.println("YES ? " + sizeParametr);
 				for(StringContent word:sent.getSentenceContent() ) {
 					boolean isWord = word.getClass() == Word.class;
 					if(isWord) {

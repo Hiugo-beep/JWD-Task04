@@ -6,4 +6,5 @@ import by.jwd.clientserver.entity.Sentence;
 
 public interface TaskPerforming {
 	public List<String> doTask(List<Sentence> sentence);
+	public void setParametrs(List<String> parametrs);
 }

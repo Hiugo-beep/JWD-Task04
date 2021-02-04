@@ -6,7 +6,7 @@ import java.util.List;
 public class Sentence implements TextContent, java.io.Serializable{
 
 	private List<StringContent> sentenceContent = null;
-	public static long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 	
 	public Sentence() {
 		this.sentenceContent = new ArrayList<StringContent>();

@@ -17,15 +17,16 @@ import by.jwd.clientserver.textbuild.TextBuild;
 
 public class TextBuildImpl implements TextBuild{
 
-	private static final TextBuildImpl instance = new TextBuildImpl();
 	private PunctuationMarkParser parser = null;
-	private TextBuildImpl() {
-		text = new Text();
-		parser = new PunctuationMarkParserImpl();
-	}
 	private Text text = null;
 	private boolean isSentenceLast = false;
 	private boolean isStart = true;
+	
+	public TextBuildImpl() {
+		text = new Text();
+		parser = new PunctuationMarkParserImpl();
+	}
+	
 
 	public Text getText() {
 		return text;
@@ -76,11 +77,7 @@ public class TextBuildImpl implements TextBuild{
 		text.getContent().get(lastIndex).add(new CodeLine(codeLine));
 		isSentenceLast = false;
 	}
-	public static TextBuildImpl getInstance() {
-		return instance;
-	}
 
-	
 }
 
 

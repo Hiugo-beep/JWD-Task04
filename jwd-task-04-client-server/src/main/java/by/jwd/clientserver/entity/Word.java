@@ -10,10 +10,10 @@ public class Word implements StringContent, java.io.Serializable{
 		this.wordContent = word;
 	}
 	
-	public void setwordContent(String word) {
+	public void setWordContent(String word) {
 		this.wordContent = word;
 	}
-	public String getwordContent() {
+	public String getWordContent() {
 		return this.wordContent;
 	}
 	

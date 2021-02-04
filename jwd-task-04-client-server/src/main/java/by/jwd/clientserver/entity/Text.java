@@ -8,7 +8,7 @@ public class Text implements java.io.Serializable{
 	private List<TextContent> content = null;
 	private List<String> textAnswer = null;
 	private String taskCondition = "";
-	public static long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 	
 	public Text() {
 		this.content = new ArrayList<TextContent>();

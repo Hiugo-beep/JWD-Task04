@@ -34,29 +34,25 @@ public class Client {
 		this.socket = new Socket(localHost  ,serverPort);
 	}
 
+	private void connectClientToServer() {
+		logger.debug("Client");
+		try {
+			this.createClient();
+		} 
+		catch (IOException ex){
+			logger.error("IOException error", ex);
+		}
+	}
 	
 	public Client() {
 		this.serverPort = 3545;
-		logger.debug("Client");
-		try {
-			this.createClient();
-		} 
-		catch (IOException ex){
-			logger.error("IOException error", ex);
-		}
 	}
 	public Client(int port) {
 		this.serverPort = port;
-		logger.debug("Client");
-		try {
-			this.createClient();
-		} 
-		catch (IOException ex){
-			logger.error("IOException error", ex);
-		}
 	}
 	
 	public void transferServer(){
+		this.connectClientToServer();
 		logger.debug("transferServer");
 		try {
 			this.write();

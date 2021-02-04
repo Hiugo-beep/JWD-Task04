@@ -32,5 +32,12 @@ public class Main {
 		client.transferServer();
 		
 		PrintTextInfo.print(client);
+		//////////////////////////////////////////////////////
+		
+		request = "4)10";
+		client.setRequest(request);
+		client.transferServer();
+		
+		PrintTextInfo.print(client);
 	}
 }
